@@ -574,25 +574,56 @@
             <use href="./icon/symbol-defs.svg#cross"></use>
           </svg>
         </button>
-        <form action="">
-          <p>Залиште свої дані, ми вам передзвонимо</p>
-          <label>
-            Ім'я
-            <input type="text" name="name" id="name" />
+        <form class="form-order">
+          <p class="form-order-heading">Залиште свої дані, ми вам передзвонимо</p>
+          <ul class="form-order-list">
+            <li class="form-order-item">
+              <label class="form-label">
+                <p class="form-order-title">Ім'я</p>
+                <input class="form-order-input form-border" type="text" name="name" id="name" />
+                <svg class="form-svg-field">
+                  <use href="./icon/symbol-defs.svg#person-black"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-order-item">
+              <label class="form-label">
+                <p class="form-order-title">Телефон</p>
+                <input class="form-order-input form-border" type="tel" name="phone" id="phone" />
+                <svg class="form-svg-field">
+                  <use href="./icon/symbol-defs.svg#phone-black"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-order-item">
+              <label class="form-label">
+                <p class="form-order-title">Пошта</p>
+                <input class="form-order-input form-border" type="email" name="email" />
+                <svg class="form-svg-field">
+                  <use href="./icon/symbol-defs.svg#email-black"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-order-item">
+              <label class="form-label">
+                <p class="form-order-title">Коментар</p>
+                <textarea
+                  class="form-order-textarea form-border"
+                  name="comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </label>
+            </li>
+          </ul>
+          <label class="check-contract">
+            <input type="checkbox" name="agree" id="agree" />
+            Погоджуюся з розсилкою та приймаю <a class="check-link" href="#">Умови договору</a>
           </label>
-          <label>
-            Телефон
-            <input type="text" name="phone" id="phone" />
-          </label>
-          <label>
-            Пошта
-            <input type="email" name="email" />
-          </label>
-          <label>
-            Коментар
-            <textarea name="comment" cols="30" rows="10"></textarea>
-          </label>
-          <label></label>
+          <div class="form-btn">
+            <button class="form-btn-send" type="submit">Відправити</button>
+          </div>
         </form>
       </div>
     </div>
