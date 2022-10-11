@@ -188,14 +188,14 @@ button {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   display: flex;
-  align-items: baseline;
+  align-items: center;
   transition: color var(--bezier-effect);
 }
 
 .header-contacts {
   margin-left: auto;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .header-contacts a + a {
@@ -669,7 +669,7 @@ button {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  
 
   display: flex;
   justify-content: end;
@@ -679,31 +679,16 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
   transition: transform var(--bezier-effect), opacity var(--bezier-effect),
-    scale var(--bezier-effect);
+  scale var(--bezier-effect);
 
-  animation-name: anime-modal;
-  animation-duration: 1500ms;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-
-  box-shadow: 10px 14px 14px #00000040; /*авторська тінь =)*/
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(50%, -50%) scale(0);
-}
-
-@keyframes anime-modal {
-  0% {
-    rotate: (0deg);
-  }
-  50% {
-    rotate: (200deg);
-  }
-  100% {
-    rotate: 360deg;
-  }
+  transform: translate(-50%, -100%) scale(0);
 }
 
 .is-hidden {
@@ -736,3 +721,6 @@ button {
   height: 18px;
   fill: currentColor;
 }
+
+/* ----------------------------FORM------------------- */
+
