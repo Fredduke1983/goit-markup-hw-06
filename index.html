@@ -565,8 +565,24 @@
             </li>
           </ul>
         </div>
+        <div class="footer-mailer">
+          <label class="footer-mailer-label">
+            <p class="footer-mailer-title">Підпишіться на розсилку</p>
+            <input type="email" class="footer-mailer-input" placeholder="E-mail" />
+          </label>
+          <button class="footer-mailer-btn">
+            <div class="fmbtn-group">
+              Підписатися
+              <svg class="fmbtn-svg">
+                <use href="./icon/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </footer>
+
+    <!-- МОДАЛЬНЕ ВІКНО -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button type="button" data-modal-close class="cross-btn">
@@ -579,26 +595,32 @@
 
           <label class="form-label">
             <p class="form-order-title">Ім'я</p>
-            <input class="form-order-input" type="text" name="name" id="name" />
-            <svg class="form-svg-field">
-              <use href="./icon/symbol-defs.svg#person-black"></use>
-            </svg>
+            <div class="form-field">
+              <input class="form-order-input" type="text" name="name" id="name" />
+              <svg class="form-svg-field">
+                <use href="./icon/symbol-defs.svg#person-black"></use>
+              </svg>
+            </div>
           </label>
 
           <label class="form-label">
             <p class="form-order-title">Телефон</p>
-            <input class="form-order-input" type="tel" name="phone" id="phone" />
-            <svg class="form-svg-field">
-              <use href="./icon/symbol-defs.svg#phone-black"></use>
-            </svg>
+            <div class="form-field">
+              <input class="form-order-input" type="tel" name="phone" id="phone" />
+              <svg class="form-svg-field">
+                <use href="./icon/symbol-defs.svg#phone-black"></use>
+              </svg>
+            </div>
           </label>
 
           <label class="form-label">
             <p class="form-order-title">Пошта</p>
-            <input class="form-order-input" type="email" name="email" />
-            <svg class="form-svg-field">
-              <use href="./icon/symbol-defs.svg#email-black"></use>
-            </svg>
+            <div class="form-field">
+              <input class="form-order-input" type="email" name="email" />
+              <svg class="form-svg-field">
+                <use href="./icon/symbol-defs.svg#email-black"></use>
+              </svg>
+            </div>
           </label>
 
           <label class="form-label">
@@ -613,8 +635,11 @@
           </label>
 
           <label class="check-contract">
-            <input type="checkbox" name="agree" id="agree" />
-            Погоджуюся з розсилкою та приймаю<a class="check-link" href="#"> Умови договору</a>
+            <input type="checkbox" class="checkbox-contract" name="agree" id="agree" />
+            <span class="check-span">
+              Погоджуюся з розсилкою та приймаю
+              <a class="check-link" href="#"> Умови договору</a></span
+            >
           </label>
           <div class="form-btn">
             <button class="form-btn-send" type="submit">Відправити</button>
