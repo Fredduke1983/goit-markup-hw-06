@@ -869,19 +869,39 @@ button {
 
 .check-contract {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
+.check-span::before {
+  display: inline-block;
+  margin-right: 7px;
+  content: '';
+  width: 16px;
+  height: 15px;
+  background-image: url(../icon/checkout.svg);
+  transition: background-image var(--bezier-effect);
+}
+
+.checkbox-contract:checked + .check-span::before {
+  background-image: url(../icon/checkin.svg);
+}
+
 .check-span {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
 }
 
 .checkbox-contract {
-  margin-right: 7px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
 }
 
 .check-link {
