@@ -939,7 +939,7 @@ button {
 
 .form-btn-send {
   display: block;
-  margin: auto auto 0 auto;
+  margin: 30px auto 0 auto;
 
   padding: 10px 52px;
   background: var(--accent-color);
